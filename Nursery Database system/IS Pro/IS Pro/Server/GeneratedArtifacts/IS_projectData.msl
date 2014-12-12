@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="IS_projectDataObjectContext" StorageEntityContainer="IS_projectDataStore">
+    <EntitySetMapping Name="Children">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Child)">
+        <MappingFragment StoreEntitySet="Children">
+          <ScalarProperty Name="ID_Child" ColumnName="ID_Child" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Birth_date" ColumnName="Birth_date" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="ID_Class" ColumnName="ID_Class" />
+          <ScalarProperty Name="ID_Parent" ColumnName="ID_Parent" />
+          <ScalarProperty Name="ID_Pay" ColumnName="ID_Pay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Classrooms">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Classroom)">
+        <MappingFragment StoreEntitySet="Classrooms">
+          <ScalarProperty Name="ID_Class" ColumnName="ID_Class" />
+          <ScalarProperty Name="Class_name" ColumnName="Class_name" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="ID_Level" ColumnName="ID_Level" />
+          <ScalarProperty Name="ID_Schedule" ColumnName="ID_Schedule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Levels">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Level)">
+        <MappingFragment StoreEntitySet="Levels">
+          <ScalarProperty Name="ID_Level" ColumnName="ID_Level" />
+          <ScalarProperty Name="Level_name" ColumnName="Level_name" />
+          <ScalarProperty Name="Fees" ColumnName="Fees" />
+          <ScalarProperty Name="Age_from" ColumnName="Age_from" />
+          <ScalarProperty Name="Age_to" ColumnName="Age_to" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parents">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Parent)">
+        <MappingFragment StoreEntitySet="Parents">
+          <ScalarProperty Name="ID_Parent" ColumnName="ID_Parent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Adress" ColumnName="Town" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Payment)">
+        <MappingFragment StoreEntitySet="Payments">
+          <ScalarProperty Name="ID_Pay" ColumnName="ID_Pay" />
+          <ScalarProperty Name="ID_Child" ColumnName="ID_Child" />
+          <ScalarProperty Name="c_Date" ColumnName="Date" />
+          <ScalarProperty Name="Total_Fees" ColumnName="Total_Fees" />
+          <ScalarProperty Name="Payment1" ColumnName="Payment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Schedule)">
+        <MappingFragment StoreEntitySet="Schedules">
+          <ScalarProperty Name="ID_Schedule" ColumnName="ID_Schedule" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedule_Sessions">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Schedule_Session)">
+        <MappingFragment StoreEntitySet="Schedule_Sessions">
+          <ScalarProperty Name="ID_Session" ColumnName="ID_Session" />
+          <ScalarProperty Name="ID_Schedule" ColumnName="ID_Schedule" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Session)">
+        <MappingFragment StoreEntitySet="Sessions">
+          <ScalarProperty Name="ID_Session" ColumnName="ID_Session" />
+          <ScalarProperty Name="Time_Start" ColumnName="Time_Start" />
+          <ScalarProperty Name="Time_End" ColumnName="Time_End" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID_Teacher" ColumnName="ID_Teacher" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Teacher)">
+        <MappingFragment StoreEntitySet="Teachers">
+          <ScalarProperty Name="ID_Teacher" ColumnName="ID_Teacher" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone_no" ColumnName="Phone_no" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

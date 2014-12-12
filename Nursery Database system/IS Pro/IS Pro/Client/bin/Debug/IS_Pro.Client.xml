@@ -1,0 +1,741 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IS_Pro.Client
+</name>
+</assembly>
+<members>
+<member name="P:LightSwitchApplication.ChildrenListDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.ChildrenListDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.ChildrenListDetail.Children">
+	<summary>
+ Gets the Children visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.ClassroomsListDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.ClassroomsListDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.ClassroomsListDetail.Classrooms">
+	<summary>
+ Gets the Classrooms visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.LevelsListDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.LevelsListDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.LevelsListDetail.Levels">
+	<summary>
+ Gets the Levels visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.ParentsListDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.ParentsListDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.ParentsListDetail.Parents">
+	<summary>
+ Gets the Parents visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.PaymentsListDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.PaymentsListDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.PaymentsListDetail.Payments">
+	<summary>
+ Gets the Payments visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.SchedulesListDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.SchedulesListDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.SchedulesListDetail.Schedules">
+	<summary>
+ Gets the Schedules visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.SessionsListDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.SessionsListDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.SessionsListDetail.Sessions">
+	<summary>
+ Gets the Sessions visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.TeachersListDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.TeachersListDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.TeachersListDetail.Teachers">
+	<summary>
+ Gets the Teachers visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewChild.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewChild.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewClassroom.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewClassroom.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewClassroom.Children">
+	<summary>
+ Gets the Children visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewLevel.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewLevel.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewLevel.Classrooms">
+	<summary>
+ Gets the Classrooms visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewParent.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewParent.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewParent.Children">
+	<summary>
+ Gets the Children visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewPayment.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewPayment.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewPayment.Children">
+	<summary>
+ Gets the Children visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSchedule.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSchedule.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSchedule.Classrooms">
+	<summary>
+ Gets the Classrooms visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSchedule.Schedule_Sessions">
+	<summary>
+ Gets the Schedule_Sessions visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSchedule_Session.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSchedule_Session.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSession.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSession.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewSession.Schedule_Sessions">
+	<summary>
+ Gets the Schedule_Sessions visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewTeacher.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewTeacher.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewTeacher.Sessions">
+	<summary>
+ Gets the Sessions visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.SearchQuery1.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.SearchQuery1.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.SearchQuery1.Query1">
+	<summary>
+ Gets the Query1 visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowChildrenListDetail">
+	<summary>
+ Opens the ShowChildrenListDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowClassroomsListDetail">
+	<summary>
+ Opens the ShowClassroomsListDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowLevelsListDetail">
+	<summary>
+ Opens the ShowLevelsListDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowParentsListDetail">
+	<summary>
+ Opens the ShowParentsListDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowPaymentsListDetail">
+	<summary>
+ Opens the ShowPaymentsListDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowSchedulesListDetail">
+	<summary>
+ Opens the ShowSchedulesListDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowSessionsListDetail">
+	<summary>
+ Opens the ShowSessionsListDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowTeachersListDetail">
+	<summary>
+ Opens the ShowTeachersListDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewChild">
+	<summary>
+ Opens a new instance of the ShowCreateNewChild screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewClassroom">
+	<summary>
+ Opens a new instance of the ShowCreateNewClassroom screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewLevel">
+	<summary>
+ Opens a new instance of the ShowCreateNewLevel screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewParent">
+	<summary>
+ Opens a new instance of the ShowCreateNewParent screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewPayment">
+	<summary>
+ Opens a new instance of the ShowCreateNewPayment screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewSchedule">
+	<summary>
+ Opens a new instance of the ShowCreateNewSchedule screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewSchedule_Session">
+	<summary>
+ Opens a new instance of the ShowCreateNewSchedule_Session screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewSession">
+	<summary>
+ Opens a new instance of the ShowCreateNewSession screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewTeacher">
+	<summary>
+ Opens a new instance of the ShowCreateNewTeacher screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowSearchQuery1">
+	<summary>
+ Opens the ShowSearchQuery1 screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.#ctor(System.Uri)">
+	<summary>
+Initialize a new IS_projectDataObjectContext object.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.ResolveTypeFromName(System.String)">
+	<summary>
+Since the namespace configured for this service reference
+in Visual Studio is different from the one indicated in the
+server schema, use type-mappers to map between the two.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.ResolveNameFromType(System.Type)">
+	<summary>
+Since the namespace configured for this service reference
+in Visual Studio is different from the one indicated in the
+server schema, use type-mappers to map between the two.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Children">
+	<summary>
+There are no comments for Children in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Classrooms">
+	<summary>
+There are no comments for Classrooms in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Levels">
+	<summary>
+There are no comments for Levels in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Parents">
+	<summary>
+There are no comments for Parents in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Payments">
+	<summary>
+There are no comments for Payments in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Schedules">
+	<summary>
+There are no comments for Schedules in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Schedule_Sessions">
+	<summary>
+There are no comments for Schedule_Sessions in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Sessions">
+	<summary>
+There are no comments for Sessions in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.IS_projectDataObjectContext.Teachers">
+	<summary>
+There are no comments for Teachers in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToChildren(LightSwitchApplication.Implementation.Child)">
+	<summary>
+There are no comments for Children in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToClassrooms(LightSwitchApplication.Implementation.Classroom)">
+	<summary>
+There are no comments for Classrooms in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToLevels(LightSwitchApplication.Implementation.Level)">
+	<summary>
+There are no comments for Levels in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToParents(LightSwitchApplication.Implementation.Parent)">
+	<summary>
+There are no comments for Parents in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToPayments(LightSwitchApplication.Implementation.Payment)">
+	<summary>
+There are no comments for Payments in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToSchedules(LightSwitchApplication.Implementation.Schedule)">
+	<summary>
+There are no comments for Schedules in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToSchedule_Sessions(LightSwitchApplication.Implementation.Schedule_Session)">
+	<summary>
+There are no comments for Schedule_Sessions in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToSessions(LightSwitchApplication.Implementation.Session)">
+	<summary>
+There are no comments for Sessions in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.IS_projectDataObjectContext.AddToTeachers(LightSwitchApplication.Implementation.Teacher)">
+	<summary>
+There are no comments for Teachers in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.IS_projectDataObjectContext">
+	<summary>
+There are no comments for IS_projectDataObjectContext in the schema.
+</summary>
+</member><member name="M:LightSwitchApplication.Implementation.Child.CreateChild(System.Int32,System.String,System.DateTime,System.String,System.Int32,System.Int32,System.Int32)">
+	<summary>
+Create a new Child object.
+</summary>
+	<param name="iD_Child">Initial value of ID_Child.</param>
+	<param name="name">Initial value of Name.</param>
+	<param name="birth_date">Initial value of Birth_date.</param>
+	<param name="gender">Initial value of Gender.</param>
+	<param name="iD_Class">Initial value of ID_Class.</param>
+	<param name="iD_Parent">Initial value of ID_Parent.</param>
+	<param name="iD_Pay">Initial value of ID_Pay.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Child.ID_Child">
+	<summary>
+There are no comments for Property ID_Child in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.Birth_date">
+	<summary>
+There are no comments for Property Birth_date in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.Gender">
+	<summary>
+There are no comments for Property Gender in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.ID_Class">
+	<summary>
+There are no comments for Property ID_Class in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.ID_Parent">
+	<summary>
+There are no comments for Property ID_Parent in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.ID_Pay">
+	<summary>
+There are no comments for Property ID_Pay in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.Classroom">
+	<summary>
+There are no comments for Classroom in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.Parent">
+	<summary>
+There are no comments for Parent in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Child.Payment">
+	<summary>
+There are no comments for Payment in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Child">
+	<summary>
+There are no comments for LightSwitchApplication.Child in the schema.
+</summary>
+	<KeyProperties>
+ID_Child
+</KeyProperties>
+</member><member name="M:LightSwitchApplication.Implementation.Classroom.CreateClassroom(System.Int32,System.String,System.Int32)">
+	<summary>
+Create a new Classroom object.
+</summary>
+	<param name="iD_Class">Initial value of ID_Class.</param>
+	<param name="class_name">Initial value of Class_name.</param>
+	<param name="iD_Level">Initial value of ID_Level.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Classroom.ID_Class">
+	<summary>
+There are no comments for Property ID_Class in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Classroom.Class_name">
+	<summary>
+There are no comments for Property Class_name in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Classroom.Capacity">
+	<summary>
+There are no comments for Property Capacity in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Classroom.ID_Level">
+	<summary>
+There are no comments for Property ID_Level in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Classroom.ID_Schedule">
+	<summary>
+There are no comments for Property ID_Schedule in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Classroom.Children">
+	<summary>
+There are no comments for Children in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Classroom.Level">
+	<summary>
+There are no comments for Level in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Classroom.Schedule">
+	<summary>
+There are no comments for Schedule in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Classroom">
+	<summary>
+There are no comments for LightSwitchApplication.Classroom in the schema.
+</summary>
+	<KeyProperties>
+ID_Class
+</KeyProperties>
+</member><member name="M:LightSwitchApplication.Implementation.Level.CreateLevel(System.Int32,System.String,System.Int32)">
+	<summary>
+Create a new Level object.
+</summary>
+	<param name="iD_Level">Initial value of ID_Level.</param>
+	<param name="level_name">Initial value of Level_name.</param>
+	<param name="fees">Initial value of Fees.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Level.ID_Level">
+	<summary>
+There are no comments for Property ID_Level in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Level.Level_name">
+	<summary>
+There are no comments for Property Level_name in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Level.Fees">
+	<summary>
+There are no comments for Property Fees in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Level.Age_from">
+	<summary>
+There are no comments for Property Age_from in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Level.Age_to">
+	<summary>
+There are no comments for Property Age_to in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Level.Classrooms">
+	<summary>
+There are no comments for Classrooms in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Level">
+	<summary>
+There are no comments for LightSwitchApplication.Level in the schema.
+</summary>
+	<KeyProperties>
+ID_Level
+</KeyProperties>
+</member><member name="M:LightSwitchApplication.Implementation.Parent.CreateParent(System.Int32,System.String)">
+	<summary>
+Create a new Parent object.
+</summary>
+	<param name="iD_Parent">Initial value of ID_Parent.</param>
+	<param name="name">Initial value of Name.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Parent.ID_Parent">
+	<summary>
+There are no comments for Property ID_Parent in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Parent.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Parent.Adress">
+	<summary>
+There are no comments for Property Adress in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Parent.Phone">
+	<summary>
+There are no comments for Property Phone in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Parent.Children">
+	<summary>
+There are no comments for Children in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Parent">
+	<summary>
+There are no comments for LightSwitchApplication.Parent in the schema.
+</summary>
+	<KeyProperties>
+ID_Parent
+</KeyProperties>
+</member><member name="M:LightSwitchApplication.Implementation.Payment.CreatePayment(System.Int32,System.Int32)">
+	<summary>
+Create a new Payment object.
+</summary>
+	<param name="iD_Pay">Initial value of ID_Pay.</param>
+	<param name="iD_Child">Initial value of ID_Child.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Payment.ID_Pay">
+	<summary>
+There are no comments for Property ID_Pay in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Payment.ID_Child">
+	<summary>
+There are no comments for Property ID_Child in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Payment.c_Date">
+	<summary>
+There are no comments for Property c_Date in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Payment.Total_Fees">
+	<summary>
+There are no comments for Property Total_Fees in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Payment.Payment1">
+	<summary>
+There are no comments for Property Payment1 in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Payment.Children">
+	<summary>
+There are no comments for Children in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Payment">
+	<summary>
+There are no comments for LightSwitchApplication.Payment in the schema.
+</summary>
+	<KeyProperties>
+ID_Pay
+</KeyProperties>
+</member><member name="M:LightSwitchApplication.Implementation.Schedule.CreateSchedule(System.Int32)">
+	<summary>
+Create a new Schedule object.
+</summary>
+	<param name="iD_Schedule">Initial value of ID_Schedule.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule.ID_Schedule">
+	<summary>
+There are no comments for Property ID_Schedule in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule.Classrooms">
+	<summary>
+There are no comments for Classrooms in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule.Schedule_Sessions">
+	<summary>
+There are no comments for Schedule_Sessions in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Schedule">
+	<summary>
+There are no comments for LightSwitchApplication.Schedule in the schema.
+</summary>
+	<KeyProperties>
+ID_Schedule
+</KeyProperties>
+</member><member name="M:LightSwitchApplication.Implementation.Schedule_Session.CreateSchedule_Session(System.Int32,System.Int32,System.String)">
+	<summary>
+Create a new Schedule_Session object.
+</summary>
+	<param name="iD_Session">Initial value of ID_Session.</param>
+	<param name="iD_Schedule">Initial value of ID_Schedule.</param>
+	<param name="day">Initial value of Day.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule_Session.ID_Session">
+	<summary>
+There are no comments for Property ID_Session in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule_Session.ID_Schedule">
+	<summary>
+There are no comments for Property ID_Schedule in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule_Session.Day">
+	<summary>
+There are no comments for Property Day in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule_Session.Schedule">
+	<summary>
+There are no comments for Schedule in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Schedule_Session.Session">
+	<summary>
+There are no comments for Session in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Schedule_Session">
+	<summary>
+There are no comments for LightSwitchApplication.Schedule_Session in the schema.
+</summary>
+	<KeyProperties>
+ID_Session
+ID_Schedule
+Day
+</KeyProperties>
+</member><member name="M:LightSwitchApplication.Implementation.Session.CreateSession(System.Int32,System.TimeSpan,System.TimeSpan,System.String)">
+	<summary>
+Create a new Session object.
+</summary>
+	<param name="iD_Session">Initial value of ID_Session.</param>
+	<param name="time_Start">Initial value of Time_Start.</param>
+	<param name="time_End">Initial value of Time_End.</param>
+	<param name="name">Initial value of Name.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Session.ID_Session">
+	<summary>
+There are no comments for Property ID_Session in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Session.Time_Start">
+	<summary>
+There are no comments for Property Time_Start in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Session.Time_End">
+	<summary>
+There are no comments for Property Time_End in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Session.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Session.ID_Teacher">
+	<summary>
+There are no comments for Property ID_Teacher in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Session.Schedule_Sessions">
+	<summary>
+There are no comments for Schedule_Sessions in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Session.Teacher">
+	<summary>
+There are no comments for Teacher in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Session">
+	<summary>
+There are no comments for LightSwitchApplication.Session in the schema.
+</summary>
+	<KeyProperties>
+ID_Session
+</KeyProperties>
+</member><member name="M:LightSwitchApplication.Implementation.Teacher.CreateTeacher(System.Int32,System.String,System.Int32,System.Int32)">
+	<summary>
+Create a new Teacher object.
+</summary>
+	<param name="iD_Teacher">Initial value of ID_Teacher.</param>
+	<param name="name">Initial value of Name.</param>
+	<param name="phone_no">Initial value of Phone_no.</param>
+	<param name="salary">Initial value of salary.</param>
+</member><member name="P:LightSwitchApplication.Implementation.Teacher.ID_Teacher">
+	<summary>
+There are no comments for Property ID_Teacher in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Teacher.Name">
+	<summary>
+There are no comments for Property Name in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Teacher.Phone_no">
+	<summary>
+There are no comments for Property Phone_no in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Teacher.salary">
+	<summary>
+There are no comments for Property salary in the schema.
+</summary>
+</member><member name="P:LightSwitchApplication.Implementation.Teacher.Sessions">
+	<summary>
+There are no comments for Sessions in the schema.
+</summary>
+</member><member name="T:LightSwitchApplication.Implementation.Teacher">
+	<summary>
+There are no comments for LightSwitchApplication.Teacher in the schema.
+</summary>
+	<KeyProperties>
+ID_Teacher
+</KeyProperties>
+</member>
+</members>
+</doc>

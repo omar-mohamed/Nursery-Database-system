@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="IS_projectDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="IS_projectDataStore">
+    <EntitySet Name="Children" EntityType="IS_projectDataStore.Child" store:Type="Tables" Schema="dbo" Table="Child" />
+    <EntitySet Name="Classrooms" EntityType="IS_projectDataStore.Classroom" store:Type="Tables" Schema="dbo" Table="Classroom" />
+    <EntitySet Name="Levels" EntityType="IS_projectDataStore.Level" store:Type="Tables" Schema="dbo" Table="Level" />
+    <EntitySet Name="Parents" EntityType="IS_projectDataStore.Parent" store:Type="Tables" Schema="dbo" Table="Parent" />
+    <EntitySet Name="Payments" EntityType="IS_projectDataStore.Payment" store:Type="Tables" Schema="dbo" Table="Payment" />
+    <EntitySet Name="Schedules" EntityType="IS_projectDataStore.Schedule" store:Type="Tables" Schema="dbo" Table="Schedule" />
+    <EntitySet Name="Schedule_Sessions" EntityType="IS_projectDataStore.Schedule_Session" store:Type="Tables" Schema="dbo" Table="Schedule_Session" />
+    <EntitySet Name="Sessions" EntityType="IS_projectDataStore.Session" store:Type="Tables" Schema="dbo" Table="Session" />
+    <EntitySet Name="Teachers" EntityType="IS_projectDataStore.Teacher" store:Type="Tables" Schema="dbo" Table="Teacher" />
+    <AssociationSet Name="FK_Child_Classroom1" Association="IS_projectDataStore.FK_Child_Classroom1">
+      <End Role="Classroom" EntitySet="Classrooms" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Child_Parent1" Association="IS_projectDataStore.FK_Child_Parent1">
+      <End Role="Parent" EntitySet="Parents" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Child_Payment" Association="IS_projectDataStore.FK_Child_Payment">
+      <End Role="Payment" EntitySet="Payments" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classroom_Level" Association="IS_projectDataStore.FK_Classroom_Level">
+      <End Role="Level" EntitySet="Levels" />
+      <End Role="Classroom" EntitySet="Classrooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classroom_Schedule" Association="IS_projectDataStore.FK_Classroom_Schedule">
+      <End Role="Schedule" EntitySet="Schedules" />
+      <End Role="Classroom" EntitySet="Classrooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Schedule_Session_Schedule" Association="IS_projectDataStore.FK_Schedule_Session_Schedule">
+      <End Role="Schedule" EntitySet="Schedules" />
+      <End Role="Schedule_Session" EntitySet="Schedule_Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Schedule_Session_Session" Association="IS_projectDataStore.FK_Schedule_Session_Session">
+      <End Role="Session" EntitySet="Sessions" />
+      <End Role="Schedule_Session" EntitySet="Schedule_Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_Teacher" Association="IS_projectDataStore.FK_Session_Teacher">
+      <End Role="Teacher" EntitySet="Teachers" />
+      <End Role="Session" EntitySet="Sessions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Child">
+    <Key>
+      <PropertyRef Name="ID_Child" />
+    </Key>
+    <Property Name="ID_Child" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Birth_date" Type="date" Nullable="false" />
+    <Property Name="Gender" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="ID_Class" Type="int" Nullable="false" />
+    <Property Name="ID_Parent" Type="int" Nullable="false" />
+    <Property Name="ID_Pay" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Classroom">
+    <Key>
+      <PropertyRef Name="ID_Class" />
+    </Key>
+    <Property Name="ID_Class" Type="int" Nullable="false" />
+    <Property Name="Class_name" Type="nchar" Nullable="false" MaxLength="20" />
+    <Property Name="Capacity" Type="int" />
+    <Property Name="ID_Level" Type="int" Nullable="false" />
+    <Property Name="ID_Schedule" Type="int" />
+  </EntityType>
+  <EntityType Name="Level">
+    <Key>
+      <PropertyRef Name="ID_Level" />
+    </Key>
+    <Property Name="ID_Level" Type="int" Nullable="false" />
+    <Property Name="Level_name" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Fees" Type="int" Nullable="false" />
+    <Property Name="Age_from" Type="datetime" />
+    <Property Name="Age_to" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Parent">
+    <Key>
+      <PropertyRef Name="ID_Parent" />
+    </Key>
+    <Property Name="ID_Parent" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Town" Type="nchar" MaxLength="20" />
+    <Property Name="Phone" Type="int" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="ID_Pay" />
+    </Key>
+    <Property Name="ID_Pay" Type="int" Nullable="false" />
+    <Property Name="ID_Child" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Total_Fees" Type="int" />
+    <Property Name="Payment" Type="int" />
+  </EntityType>
+  <EntityType Name="Schedule">
+    <Key>
+      <PropertyRef Name="ID_Schedule" />
+    </Key>
+    <Property Name="ID_Schedule" Type="int" Nullable="false" />
+    <Property Name="Name" Type="int" />
+  </EntityType>
+  <EntityType Name="Schedule_Session">
+    <Key>
+      <PropertyRef Name="ID_Session" />
+      <PropertyRef Name="ID_Schedule" />
+      <PropertyRef Name="Day" />
+    </Key>
+    <Property Name="ID_Session" Type="int" Nullable="false" />
+    <Property Name="ID_Schedule" Type="int" Nullable="false" />
+    <Property Name="Day" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="ID_Session" />
+    </Key>
+    <Property Name="ID_Session" Type="int" Nullable="false" />
+    <Property Name="Time_Start" Type="time" Nullable="false" />
+    <Property Name="Time_End" Type="time" Nullable="false" />
+    <Property Name="Name" Type="nchar" Nullable="false" MaxLength="20" />
+    <Property Name="ID_Teacher" Type="int" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="ID_Teacher" />
+    </Key>
+    <Property Name="ID_Teacher" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nchar" Nullable="false" MaxLength="20" />
+    <Property Name="Phone_no" Type="int" Nullable="false" />
+    <Property Name="salary" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Child_Classroom1">
+    <End Role="Classroom" Type="IS_projectDataStore.Classroom" Multiplicity="1" />
+    <End Role="Child" Type="IS_projectDataStore.Child" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Classroom">
+        <PropertyRef Name="ID_Class" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="ID_Class" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Child_Parent1">
+    <End Role="Parent" Type="IS_projectDataStore.Parent" Multiplicity="1" />
+    <End Role="Child" Type="IS_projectDataStore.Child" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parent">
+        <PropertyRef Name="ID_Parent" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="ID_Parent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Child_Payment">
+    <End Role="Payment" Type="IS_projectDataStore.Payment" Multiplicity="1" />
+    <End Role="Child" Type="IS_projectDataStore.Child" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment">
+        <PropertyRef Name="ID_Pay" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="ID_Pay" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classroom_Level">
+    <End Role="Level" Type="IS_projectDataStore.Level" Multiplicity="1" />
+    <End Role="Classroom" Type="IS_projectDataStore.Classroom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Level">
+        <PropertyRef Name="ID_Level" />
+      </Principal>
+      <Dependent Role="Classroom">
+        <PropertyRef Name="ID_Level" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classroom_Schedule">
+    <End Role="Schedule" Type="IS_projectDataStore.Schedule" Multiplicity="0..1" />
+    <End Role="Classroom" Type="IS_projectDataStore.Classroom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedule">
+        <PropertyRef Name="ID_Schedule" />
+      </Principal>
+      <Dependent Role="Classroom">
+        <PropertyRef Name="ID_Schedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Schedule_Session_Schedule">
+    <End Role="Schedule" Type="IS_projectDataStore.Schedule" Multiplicity="1" />
+    <End Role="Schedule_Session" Type="IS_projectDataStore.Schedule_Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedule">
+        <PropertyRef Name="ID_Schedule" />
+      </Principal>
+      <Dependent Role="Schedule_Session">
+        <PropertyRef Name="ID_Schedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Schedule_Session_Session">
+    <End Role="Session" Type="IS_projectDataStore.Session" Multiplicity="1" />
+    <End Role="Schedule_Session" Type="IS_projectDataStore.Schedule_Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Session">
+        <PropertyRef Name="ID_Session" />
+      </Principal>
+      <Dependent Role="Schedule_Session">
+        <PropertyRef Name="ID_Session" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_Teacher">
+    <End Role="Teacher" Type="IS_projectDataStore.Teacher" Multiplicity="0..1" />
+    <End Role="Session" Type="IS_projectDataStore.Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teacher">
+        <PropertyRef Name="ID_Teacher" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="ID_Teacher" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

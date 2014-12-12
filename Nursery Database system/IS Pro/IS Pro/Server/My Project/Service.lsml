@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModelFragment xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication
+    Name="LightSwitchServiceApplication"
+    Version="1.0.0.0">
+    <ServiceApplication.Attributes>
+      <ModuleNamespace
+        Namespace="LightSwitchApplication" />
+    </ServiceApplication.Attributes>
+  </ServiceApplication>
+  <DataService
+    DataProvider="EntityFrameworkDataProvider"
+    EntityContainer="LightSwitchCommonModule:IS_projectData"
+    Name="IS_projectDataDataService">
+    <DataService.ConnectionProperties>
+      <ConnectionProperty
+        Name="DataProviderName"
+        Value="91510608-8809-4020-8897-fba057e22d54" />
+      <ConnectionProperty
+        Name="DataSourceName"
+        Value="067ea0d9-ba62-43f7-9106-34930c60c528" />
+      <ConnectionProperty
+        Name="ProviderInvariantName"
+        Value="System.Data.SqlClient" />
+      <ConnectionProperty
+        Name="SafeConnectionString"
+        Value="Data Source=omar-PC\SQLEXPRESS;Initial Catalog=&quot;IS project&quot;;Integrated Security=True" />
+      <ConnectionProperty
+        Name="ConnectionStringGuid"
+        Value="0266bfad-a3d8-4cc2-8bc8-96356ac8f1b9" />
+      <ConnectionProperty
+        Name="ProviderManifestToken"
+        Value="2008" />
+    </DataService.ConnectionProperties>
+    <EntitySetMapping
+      EntitySet="Children">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Child" />
+        <SsdlProperty
+          Name="ID_Child"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Child/Properties[ID_Child]"
+          Type="int" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="Name"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Child/Properties[Name]"
+          Type="nchar" />
+        <SsdlProperty
+          Name="Birth_date"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Child/Properties[Birth_date]"
+          Type="date" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="Gender"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Child/Properties[Gender]"
+          Type="nchar" />
+        <SsdlForeignKeyProperty
+          Name="ID_Class"
+          Nullable="False"
+          PropertyName="ID_Class"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="ID_Parent"
+          Nullable="False"
+          PropertyName="ID_Parent"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="ID_Pay"
+          Nullable="False"
+          PropertyName="ID_Pay"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Classrooms">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Classroom" />
+        <SsdlProperty
+          Name="ID_Class"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Classroom/Properties[ID_Class]"
+          Type="int" />
+        <SsdlProperty
+          MaxLength="20"
+          Name="Class_name"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Classroom/Properties[Class_name]"
+          Type="nchar" />
+        <SsdlProperty
+          Name="Capacity"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Classroom/Properties[Capacity]"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="ID_Level"
+          Nullable="False"
+          PropertyName="ID_Level"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="ID_Schedule"
+          Nullable="True"
+          PropertyName="ID_Schedule"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Levels">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Level" />
+        <SsdlProperty
+          Name="ID_Level"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Level/Properties[ID_Level]"
+          Type="int" />
+        <SsdlProperty
+          MaxLength="20"
+          Name="Level_name"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Level/Properties[Level_name]"
+          Type="varchar" />
+        <SsdlProperty
+          Name="Fees"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Level/Properties[Fees]"
+          Type="int" />
+        <SsdlProperty
+          Name="Age_from"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Level/Properties[Age_from]"
+          Type="datetime" />
+        <SsdlProperty
+          Name="Age_to"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Level/Properties[Age_to]"
+          Type="datetime" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Parents">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Parent" />
+        <SsdlProperty
+          Name="ID_Parent"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Parent/Properties[ID_Parent]"
+          Type="int" />
+        <SsdlProperty
+          MaxLength="10"
+          Name="Name"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Parent/Properties[Name]"
+          Type="nchar" />
+        <SsdlProperty
+          MaxLength="20"
+          Name="Town"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Parent/Properties[Adress]"
+          Type="nchar" />
+        <SsdlProperty
+          Name="Phone"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Parent/Properties[Phone]"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Payments">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Payment" />
+        <SsdlProperty
+          Name="ID_Pay"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Payment/Properties[ID_Pay]"
+          Type="int" />
+        <SsdlProperty
+          Name="ID_Child"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Payment/Properties[ID_Child]"
+          Type="int" />
+        <SsdlProperty
+          Name="Date"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Payment/Properties[c_Date]"
+          Type="datetime" />
+        <SsdlProperty
+          Name="Total_Fees"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Payment/Properties[Total_Fees]"
+          Type="int" />
+        <SsdlProperty
+          Name="Payment"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Payment/Properties[Payment1]"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Schedules">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Schedule" />
+        <SsdlProperty
+          Name="ID_Schedule"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Schedule/Properties[ID_Schedule]"
+          Type="int" />
+        <SsdlProperty
+          Name="Name"
+          Nullable="True"
+          Property="LightSwitchCommonModule:Schedule/Properties[Name]"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Schedule_Sessions">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Schedule_Session" />
+        <SsdlProperty
+          Name="ID_Session"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Schedule_Session/Properties[ID_Session]"
+          Type="int" />
+        <SsdlProperty
+          Name="ID_Schedule"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Schedule_Session/Properties[ID_Schedule]"
+          Type="int" />
+        <SsdlProperty
+          MaxLength="20"
+          Name="Day"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Schedule_Session/Properties[Day]"
+          Type="varchar" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Sessions">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Session" />
+        <SsdlProperty
+          Name="ID_Session"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Session/Properties[ID_Session]"
+          Type="int" />
+        <SsdlProperty
+          Name="Time_Start"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Session/Properties[Time_Start]"
+          Type="time" />
+        <SsdlProperty
+          Name="Time_End"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Session/Properties[Time_End]"
+          Type="time" />
+        <SsdlProperty
+          MaxLength="20"
+          Name="Name"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Session/Properties[Name]"
+          Type="nchar" />
+        <SsdlForeignKeyProperty
+          Name="ID_Teacher"
+          Nullable="True"
+          PropertyName="ID_Teacher"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="Teachers">
+      <EntitySetMapping.Attributes>
+        <SsdlEntitySet
+          Schema="dbo"
+          Table="Teacher" />
+        <SsdlProperty
+          Name="ID_Teacher"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Teacher/Properties[ID_Teacher]"
+          Type="int" />
+        <SsdlProperty
+          MaxLength="20"
+          Name="Name"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Teacher/Properties[Name]"
+          Type="nchar" />
+        <SsdlProperty
+          Name="Phone_no"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Teacher/Properties[Phone_no]"
+          Type="int" />
+        <SsdlProperty
+          Name="salary"
+          Nullable="False"
+          Property="LightSwitchCommonModule:Teacher/Properties[salary]"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_Child_Classroom1">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_Child_Classroom1" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Child_Classroom1]/Members[Classroom]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Class" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Child_Classroom1]/Members[Child]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Class" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_Child_Parent1">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_Child_Parent1" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Child_Parent1]/Members[Parent]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Parent" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Child_Parent1]/Members[Child]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Parent" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_Child_Payment">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_Child_Payment" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Child_Payment]/Members[Payment]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Pay" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Child_Payment]/Members[Child]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Pay" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_Classroom_Level">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_Classroom_Level" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Classroom_Level]/Members[Level]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Level" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Classroom_Level]/Members[Classroom]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Level" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_Classroom_Schedule">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_Classroom_Schedule" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Classroom_Schedule]/Members[Schedule]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Schedule" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Classroom_Schedule]/Members[Classroom]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Schedule" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_Schedule_Session_Schedule">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_Schedule_Session_Schedule" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Schedule_Session_Schedule]/Members[Schedule]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Schedule" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Schedule_Session_Schedule]/Members[Schedule_Session]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Schedule" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_Schedule_Session_Session">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_Schedule_Session_Session" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Schedule_Session_Session]/Members[Session]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Session" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Schedule_Session_Session]/Members[Schedule_Session]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Session" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="FK_Session_Teacher">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="FK_Session_Teacher" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Session_Teacher]/Members[Teacher]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Teacher" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:IS_projectData/Members[FK_Session_Teacher]/Members[Session]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ID_Teacher" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+  </DataService>
+</ModelFragment>

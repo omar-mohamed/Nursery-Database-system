@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Namespace="LightSwitchApplication" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Child">
+    <Key>
+      <PropertyRef Name="ID_Child" />
+    </Key>
+    <Property Name="ID_Child" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Birth_date" Type="Edm.DateTime" Nullable="false" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="Gender" Type="Edm.String" Nullable="false" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ID_Class" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="ID_Parent" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="ID_Pay" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Classroom" Relationship="LightSwitchApplication.FK_Child_Classroom1" ToRole="Classroom" FromRole="Child" />
+    <NavigationProperty Name="Parent" Relationship="LightSwitchApplication.FK_Child_Parent1" ToRole="Parent" FromRole="Child" />
+    <NavigationProperty Name="Payment" Relationship="LightSwitchApplication.FK_Child_Payment" ToRole="Payment" FromRole="Child" />
+  </EntityType>
+  <EntityType Name="Classroom">
+    <Key>
+      <PropertyRef Name="ID_Class" />
+    </Key>
+    <Property Name="ID_Class" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Class_name" Type="Edm.String" Nullable="false" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Capacity" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ID_Level" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="ID_Schedule" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Children" Relationship="LightSwitchApplication.FK_Child_Classroom1" ToRole="Child" FromRole="Classroom" />
+    <NavigationProperty Name="Level" Relationship="LightSwitchApplication.FK_Classroom_Level" ToRole="Level" FromRole="Classroom" />
+    <NavigationProperty Name="Schedule" Relationship="LightSwitchApplication.FK_Classroom_Schedule" ToRole="Schedule" FromRole="Classroom" />
+  </EntityType>
+  <EntityType Name="Level">
+    <Key>
+      <PropertyRef Name="ID_Level" />
+    </Key>
+    <Property Name="ID_Level" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Level_name" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="Fees" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Age_from" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="Age_to" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Classrooms" Relationship="LightSwitchApplication.FK_Classroom_Level" ToRole="Classroom" FromRole="Level" />
+  </EntityType>
+  <EntityType Name="Parent">
+    <Key>
+      <PropertyRef Name="ID_Parent" />
+    </Key>
+    <Property Name="ID_Parent" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Adress" Type="Edm.String" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Phone" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Children" Relationship="LightSwitchApplication.FK_Child_Parent1" ToRole="Child" FromRole="Parent" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="ID_Pay" />
+    </Key>
+    <Property Name="ID_Pay" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ID_Child" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="c_Date" Type="Edm.DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="Total_Fees" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Payment1" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Children" Relationship="LightSwitchApplication.FK_Child_Payment" ToRole="Child" FromRole="Payment" />
+  </EntityType>
+  <EntityType Name="Schedule">
+    <Key>
+      <PropertyRef Name="ID_Schedule" />
+    </Key>
+    <Property Name="ID_Schedule" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Name" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Classrooms" Relationship="LightSwitchApplication.FK_Classroom_Schedule" ToRole="Classroom" FromRole="Schedule" />
+    <NavigationProperty Name="Schedule_Sessions" Relationship="LightSwitchApplication.FK_Schedule_Session_Schedule" ToRole="Schedule_Session" FromRole="Schedule" />
+  </EntityType>
+  <EntityType Name="Schedule_Session">
+    <Key>
+      <PropertyRef Name="ID_Session" />
+      <PropertyRef Name="ID_Schedule" />
+      <PropertyRef Name="Day" />
+    </Key>
+    <Property Name="ID_Session" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ID_Schedule" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Day" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" />
+    <NavigationProperty Name="Schedule" Relationship="LightSwitchApplication.FK_Schedule_Session_Schedule" ToRole="Schedule" FromRole="Schedule_Session" />
+    <NavigationProperty Name="Session" Relationship="LightSwitchApplication.FK_Schedule_Session_Session" ToRole="Session" FromRole="Schedule_Session" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="ID_Session" />
+    </Key>
+    <Property Name="ID_Session" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Time_Start" Type="Edm.Time" Nullable="false" Precision="7" ConcurrencyMode="Fixed" />
+    <Property Name="Time_End" Type="Edm.Time" Nullable="false" Precision="7" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ID_Teacher" Type="Edm.Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Schedule_Sessions" Relationship="LightSwitchApplication.FK_Schedule_Session_Session" ToRole="Schedule_Session" FromRole="Session" />
+    <NavigationProperty Name="Teacher" Relationship="LightSwitchApplication.FK_Session_Teacher" ToRole="Teacher" FromRole="Session" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="ID_Teacher" />
+    </Key>
+    <Property Name="ID_Teacher" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Phone_no" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="salary" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Sessions" Relationship="LightSwitchApplication.FK_Session_Teacher" ToRole="Session" FromRole="Teacher" />
+  </EntityType>
+  <Association Name="FK_Child_Classroom1">
+    <End Role="Classroom" Type="LightSwitchApplication.Classroom" Multiplicity="1" />
+    <End Role="Child" Type="LightSwitchApplication.Child" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Classroom">
+        <PropertyRef Name="ID_Class" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="ID_Class" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Child_Parent1">
+    <End Role="Parent" Type="LightSwitchApplication.Parent" Multiplicity="1" />
+    <End Role="Child" Type="LightSwitchApplication.Child" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parent">
+        <PropertyRef Name="ID_Parent" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="ID_Parent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Child_Payment">
+    <End Role="Payment" Type="LightSwitchApplication.Payment" Multiplicity="1" />
+    <End Role="Child" Type="LightSwitchApplication.Child" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment">
+        <PropertyRef Name="ID_Pay" />
+      </Principal>
+      <Dependent Role="Child">
+        <PropertyRef Name="ID_Pay" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classroom_Level">
+    <End Role="Level" Type="LightSwitchApplication.Level" Multiplicity="1" />
+    <End Role="Classroom" Type="LightSwitchApplication.Classroom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Level">
+        <PropertyRef Name="ID_Level" />
+      </Principal>
+      <Dependent Role="Classroom">
+        <PropertyRef Name="ID_Level" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classroom_Schedule">
+    <End Role="Schedule" Type="LightSwitchApplication.Schedule" Multiplicity="0..1" />
+    <End Role="Classroom" Type="LightSwitchApplication.Classroom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedule">
+        <PropertyRef Name="ID_Schedule" />
+      </Principal>
+      <Dependent Role="Classroom">
+        <PropertyRef Name="ID_Schedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Schedule_Session_Schedule">
+    <End Role="Schedule" Type="LightSwitchApplication.Schedule" Multiplicity="1" />
+    <End Role="Schedule_Session" Type="LightSwitchApplication.Schedule_Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedule">
+        <PropertyRef Name="ID_Schedule" />
+      </Principal>
+      <Dependent Role="Schedule_Session">
+        <PropertyRef Name="ID_Schedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Schedule_Session_Session">
+    <End Role="Session" Type="LightSwitchApplication.Session" Multiplicity="1" />
+    <End Role="Schedule_Session" Type="LightSwitchApplication.Schedule_Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Session">
+        <PropertyRef Name="ID_Session" />
+      </Principal>
+      <Dependent Role="Schedule_Session">
+        <PropertyRef Name="ID_Session" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_Teacher">
+    <End Role="Teacher" Type="LightSwitchApplication.Teacher" Multiplicity="0..1" />
+    <End Role="Session" Type="LightSwitchApplication.Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teacher">
+        <PropertyRef Name="ID_Teacher" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="ID_Teacher" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="IS_projectDataObjectContext" m:IsDefaultEntityContainer="true">
+    <EntitySet Name="Children" EntityType="LightSwitchApplication.Child" />
+    <EntitySet Name="Classrooms" EntityType="LightSwitchApplication.Classroom" />
+    <EntitySet Name="Levels" EntityType="LightSwitchApplication.Level" />
+    <EntitySet Name="Parents" EntityType="LightSwitchApplication.Parent" />
+    <EntitySet Name="Payments" EntityType="LightSwitchApplication.Payment" />
+    <EntitySet Name="Schedules" EntityType="LightSwitchApplication.Schedule" />
+    <EntitySet Name="Schedule_Sessions" EntityType="LightSwitchApplication.Schedule_Session" />
+    <EntitySet Name="Sessions" EntityType="LightSwitchApplication.Session" />
+    <EntitySet Name="Teachers" EntityType="LightSwitchApplication.Teacher" />
+    <AssociationSet Name="FK_Child_Classroom1" Association="LightSwitchApplication.FK_Child_Classroom1">
+      <End Role="Classroom" EntitySet="Classrooms" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Child_Parent1" Association="LightSwitchApplication.FK_Child_Parent1">
+      <End Role="Parent" EntitySet="Parents" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Child_Payment" Association="LightSwitchApplication.FK_Child_Payment">
+      <End Role="Payment" EntitySet="Payments" />
+      <End Role="Child" EntitySet="Children" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classroom_Level" Association="LightSwitchApplication.FK_Classroom_Level">
+      <End Role="Level" EntitySet="Levels" />
+      <End Role="Classroom" EntitySet="Classrooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classroom_Schedule" Association="LightSwitchApplication.FK_Classroom_Schedule">
+      <End Role="Schedule" EntitySet="Schedules" />
+      <End Role="Classroom" EntitySet="Classrooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Schedule_Session_Schedule" Association="LightSwitchApplication.FK_Schedule_Session_Schedule">
+      <End Role="Schedule" EntitySet="Schedules" />
+      <End Role="Schedule_Session" EntitySet="Schedule_Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Schedule_Session_Session" Association="LightSwitchApplication.FK_Schedule_Session_Session">
+      <End Role="Session" EntitySet="Sessions" />
+      <End Role="Schedule_Session" EntitySet="Schedule_Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_Teacher" Association="LightSwitchApplication.FK_Session_Teacher">
+      <End Role="Teacher" EntitySet="Teachers" />
+      <End Role="Session" EntitySet="Sessions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

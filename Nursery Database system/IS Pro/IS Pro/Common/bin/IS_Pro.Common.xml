@@ -1,0 +1,561 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Application.Common
+</name>
+</assembly>
+<members>
+<member name="M:LightSwitchApplication.DataWorkspace.#ctor">
+	<summary>
+ Initializes a new instance of a DataWorkspace.  Changes can be made to data sources in the new instance independent of changes made to data sources in the default DataWorkspace.
+ </summary>
+</member><member name="P:LightSwitchApplication.DataWorkspace.IS_projectData">
+	<summary>
+ Gets the IS_projectData datasource.  This provides members to query and update data in the data source.
+ </summary>
+</member><member name="M:LightSwitchApplication.IS_projectData.#ctor">
+	<summary>
+ This constructor is used for the internal LightSwitch framework. Use DataWorkspace instead.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Children">
+	<summary>
+ Gets the Children entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Classrooms">
+	<summary>
+ Gets the Classrooms entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Levels">
+	<summary>
+ Gets the Levels entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Parents">
+	<summary>
+ Gets the Parents entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Payments">
+	<summary>
+ Gets the Payments entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Schedules">
+	<summary>
+ Gets the Schedules entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Schedule_Sessions">
+	<summary>
+ Gets the Schedule_Sessions entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Sessions">
+	<summary>
+ Gets the Sessions entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectData.Teachers">
+	<summary>
+ Gets the Teachers entity set.  The entity set provides members to access entities of a specific type.
+ </summary>
+</member><member name="M:LightSwitchApplication.IS_projectData.Children_Single(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Child">
+ The value of the 'ID_Child' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Children_SingleOrDefault(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Child">
+ The value of the 'ID_Child' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Classrooms_Single(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Class">
+ The value of the 'ID_Class' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Classrooms_SingleOrDefault(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Class">
+ The value of the 'ID_Class' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Levels_Single(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Level">
+ The value of the 'ID_Level' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Levels_SingleOrDefault(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Level">
+ The value of the 'ID_Level' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Parents_Single(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Parent">
+ The value of the 'ID_Parent' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Parents_SingleOrDefault(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Parent">
+ The value of the 'ID_Parent' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Payments_Single(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Pay">
+ The value of the 'ID_Pay' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Payments_SingleOrDefault(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Pay">
+ The value of the 'ID_Pay' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Schedules_Single(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Schedule">
+ The value of the 'ID_Schedule' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Schedules_SingleOrDefault(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Schedule">
+ The value of the 'ID_Schedule' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Schedule_Sessions_Single(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Session">
+ The value of the 'ID_Session' key property of the entity to retrieve.
+ </param>
+	<param name="ID_Schedule">
+ The value of the 'ID_Schedule' key property of the entity to retrieve.
+ </param>
+	<param name="Day">
+ The value of the 'Day' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Schedule_Sessions_SingleOrDefault(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Session">
+ The value of the 'ID_Session' key property of the entity to retrieve.
+ </param>
+	<param name="ID_Schedule">
+ The value of the 'ID_Schedule' key property of the entity to retrieve.
+ </param>
+	<param name="Day">
+ The value of the 'Day' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Sessions_Single(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Session">
+ The value of the 'ID_Session' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Sessions_SingleOrDefault(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Session">
+ The value of the 'ID_Session' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Teachers_Single(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s).
+ </summary>
+	<param name="ID_Teacher">
+ The value of the 'ID_Teacher' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Teachers_SingleOrDefault(System.Nullable{System.Int32})">
+	<summary>
+ Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+ </summary>
+	<param name="ID_Teacher">
+ The value of the 'ID_Teacher' key property of the entity to retrieve.
+ </param>
+</member><member name="M:LightSwitchApplication.IS_projectData.Query1">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.IS_projectData">
+	<summary>
+ Provides members to query and update data in the IS_projectData datasource.
+ </summary>
+</member><member name="M:LightSwitchApplication.Child.#ctor">
+	<summary>
+ Initializes a new instance of the Child entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.ID_Child">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.Name">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.Birth_date">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.Gender">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.Classroom">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.Parent">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Child.Payment">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Child">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="M:LightSwitchApplication.Classroom.#ctor">
+	<summary>
+ Initializes a new instance of the Classroom entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Classroom.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Classroom.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Classroom.ID_Class">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Classroom.Class_name">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Classroom.Capacity">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Classroom.Children">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Classroom.Level">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Classroom.Schedule">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Classroom">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="M:LightSwitchApplication.Level.#ctor">
+	<summary>
+ Initializes a new instance of the Level entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Level.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Level.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Level.ID_Level">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Level.Level_name">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Level.Fees">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Level.Age_from">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Level.Age_to">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Level.Classrooms">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Level">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="M:LightSwitchApplication.Parent.#ctor">
+	<summary>
+ Initializes a new instance of the Parent entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Parent.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Parent.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Parent.ID_Parent">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Parent.Name">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Parent.Adress">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Parent.Phone">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Parent.Children">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Parent">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="M:LightSwitchApplication.Payment.#ctor">
+	<summary>
+ Initializes a new instance of the Payment entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Payment.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Payment.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Payment.ID_Pay">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Payment.ID_Child">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Payment.c_Date">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Payment.Total_Fees">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Payment.Payment1">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Payment.Children">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Payment">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="M:LightSwitchApplication.Schedule.#ctor">
+	<summary>
+ Initializes a new instance of the Schedule entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule.ID_Schedule">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule.Name">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule.Classrooms">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule.Schedule_Sessions">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Schedule">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="M:LightSwitchApplication.Schedule_Session.#ctor">
+	<summary>
+ Initializes a new instance of the Schedule_Session entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule_Session.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule_Session.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule_Session.ID_Session">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule_Session.ID_Schedule">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule_Session.Day">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule_Session.Schedule">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Schedule_Session.Session">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Schedule_Session">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="F:LightSwitchApplication.Permissions.SecurityAdministration">
+	<summary>
+ Provides the ability to manage security for the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Permissions.AllPermissions">
+	<summary>
+ Gets all permissions defined for the application.  This includes system and user-defined permissions.
+ </summary>
+</member><member name="T:LightSwitchApplication.Permissions">
+	<summary>
+ Defines the names of the application permissions.
+ </summary>
+</member><member name="M:LightSwitchApplication.Session.#ctor">
+	<summary>
+ Initializes a new instance of the Session entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Session.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Session.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Session.ID_Session">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Session.Time_Start">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Session.Time_End">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Session.Name">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Session.Schedule_Sessions">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Session.Teacher">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Session">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="M:LightSwitchApplication.Teacher.#ctor">
+	<summary>
+ Initializes a new instance of the Teacher entity.
+ </summary>
+</member><member name="P:LightSwitchApplication.Teacher.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.Teacher.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.Teacher.ID_Teacher">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Teacher.Name">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Teacher.Phone_no">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Teacher.salary">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="P:LightSwitchApplication.Teacher.Sessions">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member><member name="T:LightSwitchApplication.Teacher">
+	<summary>
+ No Modeled Description Available
+ </summary>
+</member>
+</members>
+</doc>

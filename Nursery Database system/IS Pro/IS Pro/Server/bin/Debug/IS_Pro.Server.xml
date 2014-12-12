@@ -1,0 +1,468 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Application.Server
+</name>
+</assembly>
+<members>
+<member name="P:LightSwitchApplication.IS_projectDataService.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.IS_projectDataService.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="T:LightSwitchApplication.IS_projectDataService">
+	<summary>
+ Provides members to query and update data in the IS_projectData datasource.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.#ctor">
+	<summary>
+ Initializes a new IS_projectDataObjectContext object using the connection string found in the 'IS_projectDataObjectContext' section of the application configuration file.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.#ctor(System.String)">
+	<summary>
+ Initialize a new IS_projectDataObjectContext object.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+ Initialize a new IS_projectDataObjectContext object.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Children">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Classrooms">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Levels">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Parents">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Payments">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Schedules">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Schedule_Sessions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Sessions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.IS_projectDataObjectContext.Teachers">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToChildren(IS_projectData.Implementation.Child)">
+	<summary>
+ Deprecated Method for adding a new object to the Children EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToClassrooms(IS_projectData.Implementation.Classroom)">
+	<summary>
+ Deprecated Method for adding a new object to the Classrooms EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToLevels(IS_projectData.Implementation.Level)">
+	<summary>
+ Deprecated Method for adding a new object to the Levels EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToParents(IS_projectData.Implementation.Parent)">
+	<summary>
+ Deprecated Method for adding a new object to the Parents EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToPayments(IS_projectData.Implementation.Payment)">
+	<summary>
+ Deprecated Method for adding a new object to the Payments EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToSchedules(IS_projectData.Implementation.Schedule)">
+	<summary>
+ Deprecated Method for adding a new object to the Schedules EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToSchedule_Sessions(IS_projectData.Implementation.Schedule_Session)">
+	<summary>
+ Deprecated Method for adding a new object to the Schedule_Sessions EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToSessions(IS_projectData.Implementation.Session)">
+	<summary>
+ Deprecated Method for adding a new object to the Sessions EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.IS_projectDataObjectContext.AddToTeachers(IS_projectData.Implementation.Teacher)">
+	<summary>
+ Deprecated Method for adding a new object to the Teachers EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.IS_projectDataObjectContext">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Child.CreateChild(System.Int32,System.String,System.DateTime,System.String,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Create a new Child object.
+ </summary>
+	<param name="iD_Child">Initial value of the ID_Child property.</param>
+	<param name="name">Initial value of the Name property.</param>
+	<param name="birth_date">Initial value of the Birth_date property.</param>
+	<param name="gender">Initial value of the Gender property.</param>
+	<param name="iD_Class">Initial value of the ID_Class property.</param>
+	<param name="iD_Parent">Initial value of the ID_Parent property.</param>
+	<param name="iD_Pay">Initial value of the ID_Pay property.</param>
+</member><member name="P:IS_projectData.Implementation.Child.ID_Child">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.Birth_date">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.Gender">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.ID_Class">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.ID_Parent">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.ID_Pay">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.Classroom">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.ClassroomReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.Parent">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.ParentReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.Payment">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Child.PaymentReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Child">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Classroom.CreateClassroom(System.Int32,System.String,System.Int32)">
+	<summary>
+ Create a new Classroom object.
+ </summary>
+	<param name="iD_Class">Initial value of the ID_Class property.</param>
+	<param name="class_name">Initial value of the Class_name property.</param>
+	<param name="iD_Level">Initial value of the ID_Level property.</param>
+</member><member name="P:IS_projectData.Implementation.Classroom.ID_Class">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.Class_name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.Capacity">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.ID_Level">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.ID_Schedule">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.Children">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.Level">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.LevelReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.Schedule">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Classroom.ScheduleReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Classroom">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Level.CreateLevel(System.Int32,System.String,System.Int32)">
+	<summary>
+ Create a new Level object.
+ </summary>
+	<param name="iD_Level">Initial value of the ID_Level property.</param>
+	<param name="level_name">Initial value of the Level_name property.</param>
+	<param name="fees">Initial value of the Fees property.</param>
+</member><member name="P:IS_projectData.Implementation.Level.ID_Level">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Level.Level_name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Level.Fees">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Level.Age_from">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Level.Age_to">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Level.Classrooms">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Level">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Parent.CreateParent(System.Int32,System.String)">
+	<summary>
+ Create a new Parent object.
+ </summary>
+	<param name="iD_Parent">Initial value of the ID_Parent property.</param>
+	<param name="name">Initial value of the Name property.</param>
+</member><member name="P:IS_projectData.Implementation.Parent.ID_Parent">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Parent.Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Parent.Adress">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Parent.Phone">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Parent.Children">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Parent">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Payment.CreatePayment(System.Int32,System.Int32)">
+	<summary>
+ Create a new Payment object.
+ </summary>
+	<param name="iD_Pay">Initial value of the ID_Pay property.</param>
+	<param name="iD_Child">Initial value of the ID_Child property.</param>
+</member><member name="P:IS_projectData.Implementation.Payment.ID_Pay">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Payment.ID_Child">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Payment.c_Date">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Payment.Total_Fees">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Payment.Payment1">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Payment.Children">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Payment">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Schedule.CreateSchedule(System.Int32)">
+	<summary>
+ Create a new Schedule object.
+ </summary>
+	<param name="iD_Schedule">Initial value of the ID_Schedule property.</param>
+</member><member name="P:IS_projectData.Implementation.Schedule.ID_Schedule">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule.Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule.Classrooms">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule.Schedule_Sessions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Schedule">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Schedule_Session.CreateSchedule_Session(System.Int32,System.Int32,System.String)">
+	<summary>
+ Create a new Schedule_Session object.
+ </summary>
+	<param name="iD_Session">Initial value of the ID_Session property.</param>
+	<param name="iD_Schedule">Initial value of the ID_Schedule property.</param>
+	<param name="day">Initial value of the Day property.</param>
+</member><member name="P:IS_projectData.Implementation.Schedule_Session.ID_Session">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule_Session.ID_Schedule">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule_Session.Day">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule_Session.Schedule">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule_Session.ScheduleReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule_Session.Session">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Schedule_Session.SessionReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Schedule_Session">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Session.CreateSession(System.Int32,System.TimeSpan,System.TimeSpan,System.String)">
+	<summary>
+ Create a new Session object.
+ </summary>
+	<param name="iD_Session">Initial value of the ID_Session property.</param>
+	<param name="time_Start">Initial value of the Time_Start property.</param>
+	<param name="time_End">Initial value of the Time_End property.</param>
+	<param name="name">Initial value of the Name property.</param>
+</member><member name="P:IS_projectData.Implementation.Session.ID_Session">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Session.Time_Start">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Session.Time_End">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Session.Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Session.ID_Teacher">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Session.Schedule_Sessions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Session.Teacher">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Session.TeacherReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Session">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:IS_projectData.Implementation.Teacher.CreateTeacher(System.Int32,System.String,System.Int32,System.Int32)">
+	<summary>
+ Create a new Teacher object.
+ </summary>
+	<param name="iD_Teacher">Initial value of the ID_Teacher property.</param>
+	<param name="name">Initial value of the Name property.</param>
+	<param name="phone_no">Initial value of the Phone_no property.</param>
+	<param name="salary">Initial value of the salary property.</param>
+</member><member name="P:IS_projectData.Implementation.Teacher.ID_Teacher">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Teacher.Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Teacher.Phone_no">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Teacher.salary">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:IS_projectData.Implementation.Teacher.Sessions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:IS_projectData.Implementation.Teacher">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member>
+</members>
+</doc>
